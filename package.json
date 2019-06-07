@@ -8,6 +8,10 @@
     "build": "next build",
     "start": "next start"
   },
+   "scripts": {
+    "start": "node server",
+    "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
